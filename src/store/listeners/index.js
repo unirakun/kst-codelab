@@ -2,7 +2,7 @@ import { when } from 'k-simple-state'
 import { todos, footer } from './reactions'
 
 export default [
-  // CODELAB: add an event that call 'todos.add' reaction on application init
+  // CODELAB: add an event that call 'todos.load' reaction on application init
   when('@@ui/ADD_TODO_KEYDOWN', action => action.payload === 13)(todos.add),
   when('@@ui/ADD_TODO_KEYDOWN', action => action.payload === 27)(todos.clearNew),
   when('@@ui/ADD_TODO_CHANGE')(todos.setNew),
