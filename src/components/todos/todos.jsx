@@ -26,7 +26,8 @@ const Todos = ({
       </Fragment>
     }
     <ul style={style} className={cn('todo-list', className)}>
-      {todos.map(id => <Todo key={id} id={id} />)}
+      {/* CODELAB: Make it from container */}
+      <Todo label="My hardcoded todo" />
     </ul>
   </section>
 )

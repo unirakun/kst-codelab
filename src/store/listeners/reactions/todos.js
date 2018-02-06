@@ -1,11 +1,6 @@
 import { reaction } from 'k-simple-state'
 
-export const load = reaction((action, store) => {
-  store.data.todos.all.set([
-    { id: 1, label: 'write README.md', completed: false },
-    { id: 2, label: 'write other examples', completed: false },
-  ])
-})
+// CODELAB: Add the 'load' reaction that add two TODOs
 
 export const add = reaction((action, store) => {
   const label = store.ui.newTodo.get()
