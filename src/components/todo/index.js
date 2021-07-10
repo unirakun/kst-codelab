@@ -1,1 +1,2 @@
-export { default } from './todo.container'
+// CODELAB: from container
+export { default } from './todo'

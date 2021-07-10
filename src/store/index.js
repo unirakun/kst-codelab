@@ -5,7 +5,7 @@ export default createStore(
   {
     data: {
       todos: {
-        all: { type: 'keyValue', key: 'id' },
+        // CODELAB: add a sub store 'all'
         completed: keyValue({ key: 'id' }),
         active: keyValue({ key: 'id' }),
       },
@@ -16,7 +16,7 @@ export default createStore(
           todos: 0,
           todosLeft: 0,
           todosCompleted: 0,
-          filter: 'all',
+          filter: 'active',
         },
       }),
       newTodo: { type: 'simpleObject', defaultData: '' },
